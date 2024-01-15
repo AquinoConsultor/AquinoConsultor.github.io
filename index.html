@@ -3,20 +3,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <style>
-        @import "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap";body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#e0f0e0}*{margin:0;padding:0;box-sizing:border-box;font-family:'Merriweather',serif}.container{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:20px}header{background-color:#388e3c;width:100%;padding:0;border-bottom:20px solid #228B22}.logo img{width:65%;height:auto}.menu{width:60%}.menu nav a{color:#fff;text-decoration:none;padding-right:5px;font-size:22px;position:relative;display:inline-block}.menu nav a::after{content:" ";width:0;height:4px;background-image:linear-gradient(45deg,#00FA9A,#2E8B57);position:absolute;top:30px;left:0;transition:width .5s}.menu nav a:hover::after{width:30px}.sociais{display:flex;justify-content:flex-end;align-items:center;width:25%}.sociais button{width:40px;height:40px;background-image:linear-gradient(45deg,#3CB371,#2E8B57);border:none;border-radius:8px;cursor:pointer;margin-right:10px}.sociais button i{font-size:30px}section{padding:20px}footer{background-color:#388e3c;color:#fff;text-align:center;padding:3px;position:fixed;bottom:0;width:85%}.corner-images{position:fixed;top:50%;right:10px;transform:translateY(-50%);display:flex;flex-direction:column;align-items:flex-end}.partners-text{color:#fff;font-size:16px;margin-bottom:5px;font-style:italic}.corner-images img{width:150px;border:5px solid #73AD21;border-radius:10px;margin-bottom:10px;transition:transform .3s ease-in-out}.corner-images img:hover{transform:scale(1.1)}.center-image-container{display:flex;justify-content:center;align-items:center;margin-bottom:20px}.center-image{max-width:100%;border:5px solid #e0f0e0;border-radius:10px;margin-right:10px;transition:transform .3s ease-in-out}.center-image:hover{transform:scale(1.1)}section{border-bottom:1px solid #ddd;margin-bottom:20px;.service-containerdisplay:flex;align-items:center}.service-image{max-width:100%;border:5px solid #e0f0e0;border-radius:10px;margin-right:10px;transition:transform .3s ease-in-out}.service-image:hover{transform:scale(1.1)}.contato{overflow:hidden}.contato-info{width:300px;height:400px;padding:20px;border:5px dashed #28a745;margin:15px;float:left}.table-image{width:200px;padding:20px;border:4px dashed #28a745;margin:10px;float:left;margin-right:5px}.download{padding:10px 20px;font-size:22px;border-radius:5px;text-decoration:none;color:#fff;background-color:#dc143c;border:1px solid #ff4268;border-left:10px solid #ff4268;transition:all .25s ease-in-out}.download:hover{background-color:#fff;color:#ff4268}
-    </style>
+    @import "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap";
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header {
+  background-color: #388e3c;
+  width: 100%;
+  padding: 0;
+  border-bottom: 20px solid #228B22;
+}
+
+.logo img {
+  width: 65%;
+  height: auto;
+}
+
+.menu {
+  width: 60%;
+}
+
+.menu nav a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 5px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+}
+
+.menu nav a::after {
+  content: " ";
+  width: 0;
+  height: 4px;
+  background-image: linear-gradient(45deg, #00FA9A, #2E8B57);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: width .5s;
+}
+
+.menu nav a:hover::after {
+  width: 30px;
+}
+
+.sociais {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.sociais button {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(45deg, #3CB371, #2E8B57);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.sociais button i {
+  font-size: 30px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #388e3c;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 85%;
+}
+
+.corner-images {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.partners-text {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.corner-images img {
+  width: 120px;
+  border: 5px solid #73AD21;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.corner-images img:hover {
+  transform: scale(1.1);
+}
+
+.center-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.center-image {
+  max-width: 100%;
+  border: 5px solid #e0f0e0;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.center-image:hover {
+  transform: scale(1.1);
+}
+
+section {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+}
+
+.service-image {
+  max-width: 100%;
+  border: 5px solid #e0f0e0;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-image:hover {
+  transform: scale(1.1);
+}
+
+.contato {
+  overflow: hidden;
+}
+
+.contato-info {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border: 5px dashed #28a745;
+  margin: 15px;
+  float: left;
+}
+
+.table-image {
+  width: 200px;
+  padding: 20px;
+  border: 4px dashed #28a745;
+  margin: 10px;
+  float: left;
+  margin-right: 5px;
+}
+
+.download {
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #dc143c;
+  border: 1px solid #ff4268;
+  border-left: 10px solid #ff4268;
+  transition: all .25s ease-in-out;
+}
+
+.download:hover {
+  background-color: #fff;
+  color: #ff4268;
+}
+   
+ @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    img.animated-image {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+</style>
 <head>
-	
 	<script src="https://kit.fontawesome.com/92565fc9f1.js" crossorigin="anonymous"></script>
-<meta name="google-site-verification" content="0yqP7E5S8Xn18auSWX7NTyIGnP_tgSBYptjYaI_jlzI" />	
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta property="og:description" content="Crédito Rural- Assistência técnica- Licenciamento Ambiental- Outorga das Águas -Regularização de Imóveis">
-<meta property="og:title" content="Aquino Consultoria">
-<meta property="og:url" content="https://aquinoconsultor.github.io/">
-<meta name="keywords" content="Aquino Consultoria, aquino consultoria, aquino, topografia, aquino consultoria mg, aquino consultoriaa, credito rural, assistência técnica, licenciamento ambiental, outorga das aguas, Regularização de Imóveis, dsvvcdsvisdvlviusdviusv">
+	<meta charset="UTF-8">
 	<title>Seu Negócio</title>
-</head>
+</head> 
 <body>
 	<header>
 		<div class="container">
@@ -51,6 +264,10 @@
         <a href="https://caratinga.mg.gov.br">
             <img src="./imagens/prefeitura.png" alt="Imagem 4" title="Clique para Acessar a Prefeitura de Caratinga">
         </a>
+		<a href="https://www.gov.br/inss/pt-br/canais_atendimento/acts/acordos-de-cooperacao-tecnica-acts-por-estado/minas-gerais-mg/caratinga-mg/sindicato-dos-produtores-rurais-de-caratinga">
+            <img src="./imagens/sindicado.jpg" alt="Imagem X" title="Clique para Acessar o Sindicato Rural de Caratinga">
+        </a>
+		
     </div>
 	<center><h5>Crédito Rural- Assistência técnica- Licenciamento Ambiental- Outorga das Águas -Regularização de Imóveis</h5></center>
 	<div class="center-image-container">
@@ -60,7 +277,20 @@
 	<br>
 	<br>
 	<br>
-	<br>
+	<center>
+        <p>
+            <i>"Se o homem do campo não existisse, o homem da cidade não viveria"</i>- <br>
+            <br>
+            Por trás de um desenvolvimento de uma cidade, existe uma força humana no exercício de uma atividade pouco reconhecida,
+            mas de grande<br> importância no dia a dia de cada brasileiro. Nem sempre lembrados, eles são responsáveis pela geração
+            de emprego e renda, movimentam a <br>economia e tornam a agricultura competitiva.<br>
+            São os agricultores os responsáveis pelo importante processo de produção de alimentos. O preparo do solo para o plantio,
+            o cuidado <br>com a lavoura e a colheita.<br>
+            AQUINO, é consciente da importância de pequenos, médios e grandes produtores rurais para a economia do país.
+            <br> O nosso reconhecimento e gratidão a todos que cultivam da terra o pão de cada dia.
+        </p>
+    </center>
+
     <section id="sobre">
         <h2><i><u>Sobre Nós:</u></i></h2>
 		<center><strong>Bem-vindo à Aquino Consultoria e Planejamento Rural LTDA.</strong></center>
@@ -86,7 +316,7 @@
         <h2><u>Conheça Nossos Serviços:</u></h2> 
         
 		<center><img src="./imagens/fotocentro2.jpg" alt="Imagem 8" class="service-image" width="350">
-		<img src="./imagens/fotocentro1.jpg" alt="Imagem X" class="service-image" width="350" height="260"></center>
+		<img src="./imagens/fotocentro1.JPG" alt="Imagem X" class="service-image" width="350" height="260"></center>
 		<div class="service-container">
           
 		<ul class>
@@ -142,10 +372,12 @@ Compromisso com a sustentabilidade e respeito ao seu negócio.
 	<hr class="hr5">
 	<section id="anuncio">
         <center><h2><i><u>Confira as Novidades!</u></i></h2></center>
-		<center><img src="./imagens/anun.png" alt="vaga" width="250"></center>
-       <div style='text-align:center'><p>Entre em contato conosco para obter mais informações: 
 		<br>
-		<br> <strong>Telefone:</strong>(33) 3321-7437</p>
+		<br>
+		<center><img src="./imagens/trator.png" alt="vaga" width="400">
+		<img src="./imagens/regularize.png" alt="vaga" width="400"></center>
+		<center><img src="./imagens/mapeamento.png" alt="vaga" width="300"></center>
+       <div style='text-align:center' font-size:30px ><p>Entre em contato conosco para obter mais informações:</p>
 		<strong> E-mail:</strong>aquinocaratinga@hotmail.com 
 		<br>
 		</div>
